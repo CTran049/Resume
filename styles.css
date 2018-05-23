@@ -1,0 +1,109 @@
+html {
+  background-color: black;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(211, 211, 211, 0.25);
+  margin: 1%;
+}
+
+nav a {
+  display: block;
+  float: left;
+  color: white;
+  text-align: center;
+  width: 10%;
+  transition-duration: .3s;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+  /*width: 12%;*/
+}
+
+nav a:visited, a:link {
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img#background {
+  max-width: 100%;
+  height: auto;
+}
+
+div.container#background {
+  position: relative;
+  width: 100%;
+}
+
+div.about {
+  margin-top: 100px;
+  background-color: white;
+  border-style: solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  padding: 75px;
+}
+
+div.about img {
+  /* border-style: solid; */
+  width: 80%;
+}
+
+div.about p {
+  /* border-style: solid; */
+  line-height: normal;
+}
+
+div.about p#title {
+  /* border-style: solid; */
+  font-size: 50px;
+}
+
+div.about p#hello {
+  /* border-style: solid; */
+  font-size: 30px;
+}
+
+hr {
+  display: block;
+  border-style: solid;
+  border-color: lightgray;
+}
+
+div.about p#position {
+  /* border-style: solid; */
+  font-size: 20px;
+}
