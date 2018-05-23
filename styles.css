@@ -38,6 +38,7 @@ nav a:visited, a:link {
   text-decoration: none;
 }
 
+
 .column {
   float: left;
 }
@@ -56,14 +57,39 @@ nav a:visited, a:link {
   clear: both;
 }
 
+/* -------------------------------------------------------------------------------- */
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  padding: 0;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+/* ------------------------------------------------------------------------------- */
+
 img#background {
   max-width: 100%;
   height: auto;
-}
-
-div.container#background {
-  position: relative;
-  width: 100%;
 }
 
 div.about {
